@@ -1,0 +1,6 @@
+/.terraform
+/.terraform.lock.hcl
+/log
+/main.tfdestroy
+/main.tfplan
+/terraform.exe
