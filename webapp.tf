@@ -67,7 +67,7 @@ resource "azurerm_windows_web_app" "webapp2" {
 
 
 resource "azurerm_app_service_source_control" "github1" {
-  app_id   = azurerm_windows_web_app.webapp1.id
+  app_id   = azurerm_linux_web_app.webapp1.id
   repo_url = "https://github.com/garrytees81/webapp1"
   branch   = "master"
   use_manual_integration = true
