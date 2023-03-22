@@ -4,3 +4,5 @@
 /main.tfdestroy
 /main.tfplan
 /terraform.exe
+/terraform.tfstate
+/terraform.tfstate.backup
