@@ -46,3 +46,4 @@ resource "azurerm_app_service_source_control" "sourcecontrol" {
     azurerm_linux_web_app.webapp1
   ]
 }
+
