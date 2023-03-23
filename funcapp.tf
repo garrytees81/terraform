@@ -4,7 +4,7 @@ resource "azurerm_resource_group" "rg1" {
   } 
 
 resource "azurerm_storage_account" "funappblob1" {
-  name                     = "funcapp-blob-${random_integer.func.result}"
+  name                     = "funcappblob${random_integer.func.result}"
   resource_group_name      = azurerm_resource_group.rg1.name
   location                 = azurerm_resource_group.rg1.location
   account_tier             = "Standard"
@@ -20,7 +20,7 @@ resource "azurerm_service_plan" "funcappasp" {
   resource_group_name = azurerm_resource_group.rg1.name
   location            = azurerm_resource_group.rg1.location
   os_type             = "Linux"
-  sku_name            = "F1"
+  sku_name            = "Y1"
 
    depends_on = [
     azurerm_resource_group.rg1
